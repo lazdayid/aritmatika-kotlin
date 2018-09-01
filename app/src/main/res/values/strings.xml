@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Menghitung Luas Jajar Genjang</string>
+    <string name="alas">Masukkan Alas</string>
+    <string name="tinggi">Masukkan Tinggi</string>
+    <string name="hitung">Hitung</string>
+    <string name="hasil">Hasil</string>
+</resources>

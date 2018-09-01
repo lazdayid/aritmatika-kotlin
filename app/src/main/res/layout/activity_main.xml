@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/jajar_genjang" />
+
+        <EditText
+            android:id="@+id/edtAlas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/alas"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edtTinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/tinggi"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnHitung"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/hitung"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/txtHasil"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="@string/hasil"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+</ScrollView>
