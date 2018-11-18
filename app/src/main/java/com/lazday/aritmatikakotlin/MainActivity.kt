@@ -29,5 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         Log.e("_logHasil", hasil.toString())
         txtHasil.text = hasil.toString()
+
+        scrollView.smoothScrollBy(0, scrollView.bottom)
     }
 }
