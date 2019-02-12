@@ -13,19 +13,26 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnHitung.setOnClickListener { v ->
-            var alas = edtAlas.text
-            var tinggi = edtTinggi.text
+            val alas = edtAlas.text
+            val tinggi = edtTinggi.text
 
-            if (alas.isNullOrBlank() || tinggi.isNullOrBlank())
-                Toast.makeText(this, "Isi data dengan benar",
-                        Toast.LENGTH_SHORT).show()
-             else
+//            Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
+//            if (alas.isNullOrBlank() || tinggi.isNullOrBlank()) {
+
+            if (alas.isNullOrBlank()) {
+                edtAlas.error = "Alas tidak boleh kosong"
+                edtAlas.requestFocus()
+            } else if (tinggi.isNullOrBlank()){
+                edtTinggi.error = "Tinggi tidak boleh kosong"
+                edtTinggi.requestFocus()
+            } else {
                 hitungLuas(alas.toString().toInt(), tinggi.toString().toInt())
+            }
         }
     }
 
     fun hitungLuas(alas:Int, tinggi:Int){
-        var hasil = alas * tinggi
+        val hasil = alas * tinggi
 
         Log.e("_logHasil", hasil.toString())
         txtHasil.text = hasil.toString()
